@@ -1,0 +1,21 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    {% block stylesheets %}
+        {% stylesheets filter="cssrewrite"
+            'bundles/openwidepdfjs/css/main.css'
+        %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+    {% endblock %}
+
+</head>
+
+{% block openwide_pdfjs_body %}
+{% endblock openwide_pdfjs_body %}
+</html>
